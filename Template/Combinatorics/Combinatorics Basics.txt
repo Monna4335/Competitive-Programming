@@ -1,0 +1,3 @@
+https://www.geeksforgeeks.org/count-odd-and-even-binomial-coefficients-of-n-th-power/
+
+https://cp-algorithms.com/combinatorics/binomial-coefficients.html
