@@ -6,14 +6,15 @@ void dfs(int ind,int parr){
 	vis[ind]=true;
 	in_time[ind]=timm++;
 	par[ind][0]=parr;
+	for(int i=1;i<=20;i++){
+		par[ind][i]=par[par[ind][i-1]][i-1];
+	}
 	for(auto t:v[ind]){
 		if(vis[t.first]==false){
 			dfs(t.first,ind);
 		}
 	}
-	for(int i=1;i<=20;i++){
-		par[ind][i]=par[par[ind][i-1]][i-1];
-	}
+	
 	out_time[ind]=timm++;
 }
 bool is_an(long long u,long long v){
