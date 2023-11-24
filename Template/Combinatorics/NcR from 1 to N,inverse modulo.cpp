@@ -3,7 +3,7 @@ using namespace std;
 long long inverse[1000006],fact[1000006],mod=1000000007;
 void fac(){
 	fact[0]=1;
-	for(int i=1;i<=1000006;i++){
+	for(int i=1;i<=1000002;i++){
 		fact[i]=fact[i-1]*i;
 		fact[i]%=mod;
 	}
